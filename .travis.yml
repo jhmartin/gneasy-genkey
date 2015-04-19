@@ -2,7 +2,8 @@ language: bash
 
 before_install:
   - sudo apt-get update -qq
-  - sudo apt-get install -y gpgv2 haveged
+  - sudo apt-get install -y gnupg haveged
+  - sudo apt-get install -y haveged
 
 before_script:
     - curl -L "wget https://raw.github.com/lehmannro/assert.sh/v1.1/assert.sh"
